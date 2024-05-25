@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/208/814/original/technology-background-analog-clock-time-vector.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.stopwatch {
+    position: relative; /* Added to position lap element */
+    width: 450px; /* Adjust size as needed */
+    height: 450px; /* Adjust size as needed */
+    background: radial-gradient(circle, rgba(79, 125, 252, 0.669) 50%, transparent 50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.lap {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Ensures lap is behind the timerDisplay */
+}
+
+
+.timerDisplay{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: black;
+    background-color: var(--clr);
+    padding: 12px 24px;
+    margin-inline: 12px;
+    border-radius: 50px;
+    cursor:cell;
+}
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background: #000;
+    transform-origin: 50% 100%;
+}
+
+.hour-hand {
+    width: 5px;
+    height: 50px;
+    top: 50px;
+    left: calc(50% - 2.5px);
+    background: #000;
+}
+
+.minute-hand {
+    width: 3px;
+    height: 70px;
+    top: 30px;
+    left: calc(50% - 1.5px);
+    background: #000;
+}
+
+.second-hand {
+    width: 1px;
+    height: 90px;
+    top: 10px;
+    left: calc(50% - 0.5px);
+    background: #f00;
+}
+
+.center-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+}
+
+.timerDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.laps h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.laps ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}

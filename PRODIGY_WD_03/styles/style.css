@@ -1,0 +1,160 @@
+/* Body Styling */
+body {
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #ef9bee, #f39c12, #3498db, #2ecc71);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Winning and losing background colors */
+body.winning {
+    background: #4CAF50; /* Green */
+    animation: none;
+}
+
+body.losing {
+    background: #FF5733; /* Red */
+    animation: none;
+}
+
+/* Remove default input focus outline */
+input::-moz-focus-inner {
+    border: 0;
+}
+
+/* Remove default anchor focus outline */
+a {
+    outline: 0;
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Enhance submit button styling */
+.submit-button {
+    margin-top: 20px;
+    width: 280px;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* Game area styling */
+.game-area {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Game options styling */
+.game-options {
+    border-bottom: 1px dashed #CFCFCF;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.game-options select,
+.game-options input {
+    border: 1px solid #e0e717;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-options select:focus,
+.game-options input:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+/* Game board styling */
+.game-board {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+/* Grid box and player styling */
+.grid-box,
+.green-player,
+.red-player {
+    font-size: 35px;
+    padding: 15px 25px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    background-color: #cd3e3e;
+    outline: none;
+    box-shadow: 5px 5px 10px rgba(31, 150, 241, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-box:hover,
+.green-player:hover,
+.red-player:hover {
+    background-color: #f39c12;
+    transform: translateY(-3px);
+}
+
+/* Green player specific styling */
+.green-player {
+    background-color: #4CAF50;
+    color: #FFF;
+    box-shadow: 5px 5px 10px rgba(46, 139, 87, 0.5);
+}
+
+/* Red player specific styling */
+.red-player {
+    background-color: #FF5733;
+    color: #FFF;
+    box-shadow: 5px 5px 10px rgba(205, 92, 92, 0.5);
+}
+
+/* Score card styling */
+.score-card {
+    font-weight: bold;
+    line-height: 25px;
+    color: #d4fe06;
+    border-radius: 5px;
+    background-color: #34495e;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.score-card span {
+    font-weight: normal;
+}

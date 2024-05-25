@@ -1,0 +1,138 @@
+/* Input Element Modification: Begin */
+body{
+    background-image: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?size=626&ext=jpg");
+  
+}
+/* Main Input Element */
+#cityQuery {
+    background: rgb(255, 255, 255);
+    min-width: 7em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Button for Adding A New City to Dynamic List */
+#addCitybtn {
+    background: #4e9acd;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+#addCitybtn:hover {
+    background: #557a91;
+}
+
+/* Form Wrapper */
+#formLWrap {
+    background: #c7c1bb;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* Dynamic Button Object, Displaying Weather, Below */
+.newCity {
+    display: block;
+    width: 100%;
+    margin: 2% 0 0 0;
+    padding: 0.5em;
+    background: #eef3f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em;
+    color: #4085d4;
+    cursor: pointer;
+}
+.newCity:hover {
+    background: #dfe7ec;
+}
+
+/* Input Elements: End */
+
+/* Five-Day Forecast Elements */
+.five_day_div {
+    background: #4c9cb5;
+    max-width: 18%;
+    color: white;
+    display: inline-block;
+    margin: 3% 1% 1% 1%;
+    padding: 1% 1%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.five_day_div h2, .five_day_div p {
+    margin: 0.5em 0;
+}
+
+/* Five-Day Forecast Wrapper */
+#showWeatherForecast {
+    margin: 2em 0 0 0;
+    background: #d3d3d3;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Elements */
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 700;
+    color: rgb(19, 55, 236);
+    width: 100%;
+    font-size: 5em;
+    font-size: x-large;
+    margin: 0.5em 0;
+}
+
+#h1Wrap {
+    background: radial-gradient(#f2e942 60%);
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 1em 0;
+    border-radius: 8px;
+}
+
+/* Card Text */
+.card-text {
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .five_day_div {
+        max-width: 45%;
+        margin: 3% 2% 1% 2%;
+    }
+    #cityQuery, #addCitybtn, .newCity {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .five_day_div {
+        max-width: 90%;
+        margin: 3% 5%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    #cityQuery, #addCitybtn, .newCity {
+        font-size: 0.8em;
+    }
+}
+
+/* Input Element Modification: End */
